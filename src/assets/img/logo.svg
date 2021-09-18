@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X7 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="43.3876mm" height="49.4054mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 3801 4329"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil5 {fill:#0AF2AA}
+    .fil3 {fill:#121212}
+    .fil4 {fill:#131313}
+    .fil2 {fill:#2C765A}
+    .fil1 {fill:#2C7B5B}
+    .fil0 {fill:#3CB4EC}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_2120581930224">
+   <path class="fil0" d="M40 1237l230 183c483,-368 1075,-757 1584,-1117l1634 1136 247 -161 -1877 -1278 -1818 1237z"/>
+   <path class="fil0" d="M500 1577c88,60 149,103 241,156l1095 -775c73,43 177,114 262,171 72,49 163,132 265,195l627 425c72,-10 214,-95 243,-152l-1397 -939 -1336 919z"/>
+   <path class="fil0" d="M1024 1934l209 148 619 -447 639 460 236 -165 -874 -600c-241,160 -586,423 -829,604z"/>
+   <path class="fil1" d="M3732 1309l1 285 -1879 1202 -30 22 112 74c79,-29 1540,-1011 1865,-1229l-4 -334 -66 -54 1 34z"/>
+   <path class="fil2" d="M3410 2314l0 152 -1557 1034 -6 -3c41,30 75,48 121,85l1539 -1023 -1 -289 -96 44z"/>
+   <polygon class="fil2" points="245,1404 370,1485 1961,372 1855,302 "/>
+   <polygon class="fil2" points="726,1725 876,1829 1955,1033 1836,958 "/>
+   <path class="fil2" d="M2820 3416l-7 148c-136,83 -924,625 -1001,612l171 153 943 -660 2 -307 -108 54z"/>
+   <polygon class="fil2" points="1233,2082 1350,2165 1976,1711 1853,1633 "/>
+   <path class="fil3" d="M353 1473l162 115c17,12 1186,-829 1321,-930l1397 939 255 -158 -1527 -1067 -13 -8 -1595 1109z"/>
+   <polygon class="fil4" points="845,1807 1024,1934 1854,1339 2727,1930 2990,1749 1955,1033 "/>
+   <polygon class="fil3" points="1350,2165 1827,2501 2472,2081 1976,1711 "/>
+   <path class="fil5" d="M1853 3500l1557 -1034 0 -152 1 -143 -1560 1033 -1851 -1264 2 299c570,430 1264,888 1851,1261z"/>
+   <path class="fil5" d="M1824 2818l1909 -1224 -2 -318c-618,378 -1290,830 -1904,1225l-1787 -1264 -33 303c414,334 1348,949 1817,1278z"/>
+   <polygon class="fil5" points="1843,4201 2075,4052 2813,3564 2833,3265 1854,3889 471,2942 1,2633 4,2919 "/>
+  </g>
+ </g>
+</svg>

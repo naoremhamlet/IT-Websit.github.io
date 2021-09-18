@@ -1,0 +1,53 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+main {
+  margin: 2rem;
+}
+
+main h1 {
+  text-align: center;
+}
+
+main .wrapperti {
+  counter-reset: number;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 4rem 0;
+}
+
+main .container {
+  box-shadow: 0px 0px 20px #c4c4c4;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  width: 300px;
+  margin: 0 0.5rem 4rem;
+  background: white;
+  text-align: center;
+  position: relative;
+}
+
+main .container::before {
+  counter-increment: number;
+  content: counter(number);
+  width: 4rem;
+  height: 4rem;
+  background: #12e7c0;
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  top: -2rem;
+  left: 7.4rem;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 3rem;
+}
+
+main .title {
+  margin: 2rem 0 1rem 0;
+}
