@@ -1,6 +1,11 @@
 import React, { Component } from 'react'
+
+import WhyUs from './WhyUs'
+import Client from './Client'
+
 import "../../../css/Services.css"
 
+import { Data } from '../Data'
 
 class Services extends Component {
 
@@ -12,32 +17,33 @@ class Services extends Component {
         this.Content = this.Content.bind(this)
     }
     
-    Header(){
-        const { active, data } = this.props;
+    Header({ active, heading}){
+        
         return(
             <header>
                 <h1>{active.toUpperCase()}</h1>
-                <p>{data.heading}</p>
+                <p>{heading}</p>
             </header>
         )
     }
 
     SingleContent({ name, type, content, image }){
+        const { changeActive } = this.props
         return(
-            <div className="singleBlog">
+            <div className="singleBlog" style={{ cursor: 'pointer'}}>
                 <img src={image} alt="" />
                 <div className="blogContent">
                     <h3>{name}<span>{type}</span></h3>
                     <p>{content}</p>
-                    <a href="#" className="btn">Get Deal</a>
+                    <a href="#" className="btn" style={{ width: 'fit-content' }} onClick={()=>changeActive('contact us')}>Get Deal</a>
                 </div>
             </div>
         )
     }
 
-    Content(){
-        console.log(this.props.data.data)
-        const { data } = this.props;
+    Content({ data }){
+        //console.log(this.props.data.data)
+        //const { data } = this.props;
         return(
             data.data.map(el => (
                 <this.SingleContent 
@@ -51,15 +57,24 @@ class Services extends Component {
     }
 
     render() {
-        console.log(this.Content)
+        const { active } = this.props;
+        console.log(active)
+        const data = Data[active.split(' ').join('')]
+        console.log(data)
         return (
-            <div className="container">
-                <this.Header />
+            <>
+                <div className="container">
+                    <this.Header 
+                        headng={data.heading}
+                        active={active} />
 
-                <main>
-                    <this.Content />
-                </main>
-            </div> 
+                    <main>
+                        <this.Content data={data} />
+                    </main>
+                </div>
+                <WhyUs />
+                <Client />
+            </>
         );
     }
 }

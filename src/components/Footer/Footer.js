@@ -49,7 +49,7 @@ class Footer extends Component {
                 <p className="footer_column_heading">{row.heading}</p>
                 {
                     row.value.map((el, i) => (
-                            <a className="footer_column_link">
+                            <a className="footer_column_link" onClick={() => window.scrollTo(0, 0)}>
                                 {row.heading=="Connect Us"?
                                     <img width={30} height={30} src={row.image[el]} />
                                     :null}
@@ -74,7 +74,7 @@ class Footer extends Component {
         return(
             <div className="footer_column">
                 <p className="footer_column_heading">Reach Us</p>
-                <a className="footer_column_link" style={{ marginBottom: 10 }}>hr@amkamtech.com</a>
+                <a className="footer_column_link" style={{ marginBottom: 10 }}>amkam@tech.com</a>
                 <a className="footer_column_link" style={{ marginBottom: 10 }}>+91 6565 2020 12</a>
                 <p className="footer_column_heading">Address</p>
                 <a className="footer_column_link">Hauz Khas <br></br>New Delhi, India 110040</a>

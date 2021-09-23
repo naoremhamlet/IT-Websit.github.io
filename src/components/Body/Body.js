@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { transitions, positions, Provider as AlertProvider } from 'react-alert'
+import AlertTemplate from 'react-alert-template-basic'
 
 import Banner from './BComp/Banner';
 import Services from './BComp/Services';
@@ -10,7 +12,8 @@ import Form from './BComp/Form';
 import Nav from '../Header/Nav';
 import Footer from '../Footer/Footer';
 import ContactUs from './BComp/ContactUs';
-import { ITData, WebData, CryptoData } from './Data';
+import SpecificService from './BComp/SpecificService';
+import AboutUs from './BComp/AboutUs';
 
 {/*  image */}
 
@@ -23,36 +26,43 @@ class Body extends Component {
             active: 'home'
         }
         
+        this.changeActive = this.changeActive.bind(this)
+    }
+
+    changeActive(active){
+        this.setState({ active });
+        window.scrollTo(0, 0)
     }
     
     render() {
         const { active } = this.state;
         return (
             <>
+            
                 <Nav active={active}
-                    changeActive={(active)=> this.setState({ active })} />
+                    changeActive={this.changeActive} />
 
-                {active==='home'? <Banner changeActive={(active)=> this.setState({ active })} />: null}
+                {active==='home'? <Banner changeActive={this.changeActive} />: null}
 
-                {
-                    (active==='it services')?
-                        <Services active={active} data={ITData} />
-                    :   (active==='web services')?
-                            <Services active={active} data={WebData} />
-                        :   (active==='crypto services')?
-                                <Services active={active} data={CryptoData} />
-                            : null
+                {active!=='home'&&active!=='contact us'&&active!=='it services'&&active!=='web services'&&active!=='crypto services'&&active!=='about us'?
+                
+                    <SpecificService active={active} changeActive={this.changeActive} /> : null
                 }
+
+                {(active==='it services' || active==='web services' || active==='crypto services')?
+                        <Services active={active} changeActive={this.changeActive} /> : null }
 
                 {active==='contact us'? <ContactUs />: null}
 
                 
-                
-                {active==='home' || active=='about'? <Features/>: null}
 
-                <Testimonials/>
-                {active==='home' || active=='about'? <Timeline />: null}
                 
+                {active==='home' || active==='about us'? <Features/>: null}
+
+                {active==='home'? <Testimonials/>: null}
+                {active!=='contact us'&&active!=='it services'&&active!=='web services'&&active!=='crypto services'&&active!=='about us'? <Timeline />: null}
+                {active==='about us'? <AboutUs />: null}
+
                 <Chat />
                 <Footer />
             </>

@@ -21,8 +21,8 @@ section{
   width: 100%;
   margin: 4rem auto;
 }
-main{
-  display: grid;
+.container main{
+  display: grid !important;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
   margin: 30px 15px 0px 15px;

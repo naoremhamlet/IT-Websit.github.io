@@ -57,6 +57,11 @@
 .chat_widget .child_phone{
     bottom: 94px;
 }
+.chat_widget .child_phone a img{
+    height: 30px;
+    width: 30px;
+    display: flex;
+}
 ._2iWL7{
     z-index: 999!important;
     position: fixed!important;

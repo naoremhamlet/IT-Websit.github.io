@@ -1,0 +1,83 @@
+/* primar = #651fff
+gray = #37474f
+gray light = #b0bec5 */
+
+*{
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.team {
+    margin: 2rem;
+
+}
+ h1 {
+    text-align: center;
+}
+.wrapper-grid{
+    display: grid;
+    grid-template-columns: minmax(300px, 1fr);
+    justify-content: center;
+    grid-gap: 2rem;
+    margin:2rem 4rem;
+}
+.wrapper-grid .container{
+    box-shadow: 0px 2px 8px 0px #b0bec5;
+    text-align: center;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+    margin: 1rem auto !important;
+    transition: 250ms all ease-in-out;
+
+    
+}
+.wrapper-grid .container:hover {
+    box-shadow: 0px 2px 8px 0px #262727;
+    transform: scale(1.05);
+
+}
+
+.banner-img{
+    position: absolute;
+    background-image: url('../assets/img/background.jpg');
+    height: 10rem;
+    width:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.profile-img{
+    width:8rem;
+    clip-path: circle(60px at center);
+    margin-top: 4.5rem;
+}
+
+.name{
+    font-size: 1.5rem;
+}
+.description{
+    margin: 1rem ;
+}
+.btn{
+    width: 100%;
+    border:none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #2b6777;
+    padding: 1rem;
+}
+@media screen and (min-width:500px){
+    .wrapper-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (min-width:760px){
+    .wrapper-grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

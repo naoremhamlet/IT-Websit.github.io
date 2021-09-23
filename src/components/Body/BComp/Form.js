@@ -4,7 +4,7 @@ import { withAlert } from "react-alert";
 
 
 var serviceOption = () => {
-    let value = ["Web Development", "App Development", "Crypto"];
+    let value = ["IT Services", "Web Services", "Crypto Services"];
     return(
         <>
             <option value="" selected disabled hidden></option>
@@ -53,7 +53,7 @@ class Form extends Component {
         const { name, phone, company, email } = this.state;
         return(
             <div className="form_details">
-                <p style={{width: '45%', float: 'left', padding: '2%'}}>
+                <p style={{width: '48%', float: 'left', padding: '1%'}}>
                     <label>Full Name </label>
                     <input id="name" type="text" value={name}
                         onChange={(e) => this.changeInput(e)} />
@@ -65,7 +65,7 @@ class Form extends Component {
                         {serviceOption()}
                     </select>
                 </p>
-                <p style={{width: '45%', float: 'right', padding: '2%'}}>
+                <p style={{width: '48%', float: 'right', padding: '1%'}}>
                     <label>Company </label>
                     <input id="company" type="text" max="50" value={company}
                         onChange={(e) => this.changeInput(e)} />
@@ -77,7 +77,7 @@ class Form extends Component {
                         {positionOption()}
                     </select>
                 </p>
-                <p style={{padding: '2%', width: '90%'}}>
+                <p style={{padding: '1%', width: '100%'}}>
                     <label>Describe what you need</label>
                     <textarea id="about" value={this.state.about}
                         onChange={(e) => this.changeInput(e)} /> 

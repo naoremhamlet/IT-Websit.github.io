@@ -6,9 +6,9 @@ function Banner(props) {
         <div className="hero-image">
             <div className="hero-text">
                 <h1 style={{ fontSize: "50px" }}>AkamTech</h1>
-                <p>we do what you need</p>
+                <p>We do what you need</p>
                 <br />
-                <button onClick={() => props.changeActive('contact us')}>Contact US</button>
+                <button onClick={() => props.changeActive('contact us')}>Get in Touch</button>
             </div>
         </div>
 

@@ -41,15 +41,19 @@ class ContactUs extends Component {
         const { name, email, about } = this.state;
         return(
             <div className="contact_us_row" style={{ fontSize: 'small'}}>
-                <span className="contact_us_form_section">
-                    <p style={{marginBottom: '5%', fontFamily: 'sans-serif', fontSize: 'medium', fontWeight: 700, color: 'orange'}}>Get in touch</p>
+                
+                <div className="contact_us_form_section">
+                    <p style={{marginBottom: '5%', fontFamily: 'sans-serif', fontSize: 'medium', fontWeight: 700, color: '#52ab98'}}>Get in touch</p>
                     <Form />
+                    {/* left */}
                     <p style={{marginTop: '5%', fontFamily: 'sans-serif', fontSize: 'x-small'}}>We take your privacy seriously. And nothing will be shared unless we need to speak with our partner for solution even if you opt out of NDA.</p>
-                </span>
-                <span className="contact_us_meeting">
+                </div>
+
+                {/* right component */}
+                <div className="contact_us_meeting">
                     <p style={{fontFamily: 'sans-serif', fontWeight: 700, fontSize: 'medium'}}>Schedule a meeting</p>
-                    <p style={{margin: 0, padding: 0}}><img src={Logo_no_bg} alt="" width={40}/></p>
-                    <p style={{margin: 0, padding: 0, color: 'orange', fontSize: 'small', fontWeight: 600}}>Please Select a date</p>
+                    {/* <p style={{margin: 0, padding: 0}}><img src={Logo_no_bg} alt="" width={40}/></p> */}
+                    <p style={{margin: 0, padding: 0, color: '#52ab98', fontSize: 'small', fontWeight: 600}}>Please Select a date</p>
                     <div className="meeting_details">
                         <Datetime input={false} timeFormat={false} isValidDate={ valid } onChange={(e) => this.setMeetingTime(e, "date")} />
                         <Datetime input={false} dateFormat={false} isValidDate={ valid } onChange={(e) => this.setMeetingTime(e, "time")} />
@@ -63,7 +67,7 @@ class ContactUs extends Component {
                         <input type="text" placeholder="Guest Email" className="guest_email_input" />
                     </div>
                     <input type="button" value="Confirm" onClick={this.submit}/>
-                </span>
+                </div>
             </div>
         )
     }
@@ -151,6 +155,7 @@ class ContactUs extends Component {
     render() {
         return (
                 <div className="contact_us_box" style={{ marginTop: 50}}>
+                    <h1>Contact Us</h1>
                     <div className="contact_us_container">
                        
                         <this.FormSection />

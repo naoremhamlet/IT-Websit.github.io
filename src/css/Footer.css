@@ -1,6 +1,6 @@
 
 .footer_box{
-    background: black;
+    background: #52ab98;
     position: relative;
     bottom: 0;
     width: 100%;
@@ -46,7 +46,9 @@
 
 
 .footer_column_link:hover {
-	color: rgb(78, 123, 247);
+	/* color: rgb(78, 123, 247); */
+    /* background-color: #c8d8e4 ; */
+    color: black;
 	transition: 200ms ease-in;
 }
 

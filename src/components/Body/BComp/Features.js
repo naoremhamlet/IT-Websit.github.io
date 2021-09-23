@@ -2,24 +2,23 @@ import React, { Component } from 'react'
 import '../../../css/Features.css'
 import Crypto from '../../../assets/img/crypto_services/crypto-service4.jpg' ;
 import It1 from '../../../assets/img/it_services/it-services2.jpg' ;
-import It2 from '../../../assets/img/it_services/it.jpeg'
 import Web from '../../../assets/img/web_services/web-service1.jpg' ;
 
 let cards = [
     {
         image: Crypto,
-        header: "Crypto Currency",
-        content: "aCrypto Currencing in interesting "
+        header: "IT Services",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
     },
     {
         image: Web,
-        header: "Web Design",
-        content: "Crypto Currencing in interesting"
+        header: "Web Services",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
     },
     {
         image: It1,
-        header: "It Services",
-        content: "aCrypto Currencing in interesting "
+        header: "Crypto Services",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
     }
 ]
 
@@ -32,13 +31,13 @@ class Features extends Component {
 
     CreateCard({ image, header, content }){
         return(
-            <div className="card">
-                <div className="card-banner">
-                    <img className="banner-img" src={image} alt="code" />
+            <div className="features_card">
+                <div className="features_card_banner">
+                    <img className="features_banner_img" src={image} alt="code" />
                 </div>
-                <div className="card-body">
-                    <h2 className="blog-title">{header}</h2>
-                    <p className="description">{content}</p>
+                <div className="features_card_body">
+                    <h2 className="features_blog_title">{header}</h2>
+                    <p className="features_description">{content}</p>
                 </div>
             </div>
         )
@@ -58,9 +57,9 @@ class Features extends Component {
     
     render() {
         return (
-            <div classNameName="features">
+            <div className="features">
                 <h1>What We Provide</h1>
-                <div className="wrapperf">
+                <div className="features_wrapperf">
 
                     <this.Card />
                 </div>

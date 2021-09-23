@@ -7,13 +7,15 @@
 }
 main {
   margin: 2rem;
+  display: inline !important;
+
 }
 
 main h1 {
   text-align: center;
 }
 
-main .wrapperti {
+.wrapperti {
   counter-reset: number;
   display: flex;
   flex-wrap: wrap;

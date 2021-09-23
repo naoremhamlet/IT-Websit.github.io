@@ -2,6 +2,7 @@ import React, { Component }  from 'react'
 import '../../css/Nav.css'
 //import DehazeIcon from '@material-ui/icons/Dehaze';
 import logo from "../../assets/img/logo.svg"
+import menu from "../../assets/img/menu.png"
 
 class Nav extends Component {
     constructor(props) {
@@ -18,7 +19,7 @@ class Nav extends Component {
         let val = "Web Services"
         return(
             <li>
-                <span href="#" class="desktop-link" style={{backgroundColor: val.toLowerCase()===active? '#6F8FAF': null, cursor:'pointer'  }}
+                <span href="#" class="desktop-link" style={{backgroundColor: val.toLowerCase()===active? '#52ab98': null, cursor:'pointer'  }}
                     onClick={() => changeActive(val.toLowerCase())} >{val}</span>
                 <input type="checkbox" id="show-services" />
                 <label for="show-services">{val}</label>
@@ -29,7 +30,7 @@ class Nav extends Component {
                         <label for="show-items">Digital Services</label>
                         <ul>
                             {menu.map(el => (
-                                <li><span>{el}</span></li>
+                                <li onClick={() => changeActive(el.toLowerCase())} ><span>{el}</span></li>
                             ))}
                         </ul>
                     </li>
@@ -41,18 +42,18 @@ class Nav extends Component {
     ITServices(){
         let { active, changeActive } = this.props;
         let val = "IT Services"
-        let menu = ['MicroSoft Office', 'Google G Support', 'Video Conferencing System',
+        let menu = ['Cloud Services','MicroSoft Office', 'Google G Support', 'Video Conferencing System',
                          'Report Software Solution', 'Hardware/Software Procurement', 'System Upgrade']
         
         return(
             <li>
-                <span class="desktop-link" style={{backgroundColor: val.toLowerCase()===active? '#6F8FAF': null, cursor:'pointer'  }}
+                <span class="desktop-link" style={{backgroundColor: val.toLowerCase()===active? '#52ab98': null, cursor:'pointer'  }}
                     onClick={() => changeActive(val.toLowerCase())}>{val}</span>
                 <input type="checkbox" id="show-features" />
                 <label for="show-features">{val}</label>
                 <ul>
                     {menu.map(el => (
-                            <li><span>{el}</span></li>
+                            <li onClick={() => changeActive(el.toLowerCase())} ><span>{el}</span></li>
                         ))}
                 </ul>
             </li>
@@ -65,13 +66,13 @@ class Nav extends Component {
         let menu = ['NFTs Setup'];
         return(
             <li>
-                <span href="#" class="desktop-link" style={{backgroundColor: val.toLowerCase()===active? '#6F8FAF': null, cursor:'pointer'  }}
+                <span href="#" class="desktop-link" style={{backgroundColor: val.toLowerCase()===active? '#52ab98': null, cursor:'pointer'  }}
                     onClick={() => changeActive(val.toLowerCase())}>{val}</span>
                 <input type="checkbox" id="show-crypto" />
                 <label for="show-crypto">{val}</label>
                 <ul>
                     {menu.map(el => (
-                        <li><span>{el}</span></li>
+                        <li onClick={() => changeActive(el.toLowerCase())} ><span>{el}</span></li>
                     ))}
                 </ul>
             </li>
@@ -85,25 +86,21 @@ class Nav extends Component {
             <nav>
                 <input type="checkbox" id="show-search" />
                 <input type="checkbox" id="show-menu" />
-                <label for="show-menu" class="menu-icon">icon</label>
+                <label for="show-menu" class="menu-icon" style={{ display: 'flex', alignItems: 'center', width: 'fit-content', paddingRight: '1ch'}}><img src={menu} height={30} width={20} style={{ width: 30 }} /></label>
                     <div class="logo">
                         <img src={logo} alt="logo"/>
                     </div>
                 <div class="content">
                     <ul class="links">
                         <li>
-                            <span style={{backgroundColor: active==='home'? '#6F8FAF': null, cursor:'pointer'  }}
+                            <span style={{backgroundColor: active==='home'? '#52ab98': null, cursor:'pointer'  }}
                                 onClick={() => changeActive('home')}>Home</span>
-                        </li>
-                        <li>
-                            <span style={{backgroundColor: active==='about'? '#6F8FAF': null, cursor:'pointer' }}
-                                onClick={() => changeActive('about')}>About</span>
                         </li>
                         <this.ITServices />
                         <this.WebServices />
                         <this.CryptoServices />
                         <li>
-                            <span style={{backgroundColor: active==='about us'? '#6F8FAF': null, cursor:'pointer' }}
+                            <span style={{backgroundColor: active==='about us'? '#52ab98': null, cursor:'pointer' }}
                                 onClick={() => changeActive('about us')}>About Us</span>
                         </li>
                     </ul>

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import WhatsAppWidget from 'react-whatsapp-widget'
+import { withAlert } from "react-alert";
 
 import 'react-whatsapp-widget/dist/index.css'
 
@@ -37,6 +38,7 @@ class Chat extends Component {
     
     render() {
         const { active } = this.state;
+        const alert = this.props.alert;
         return (
             <div className="chat_widget">
                 {active?
@@ -48,7 +50,7 @@ class Chat extends Component {
                             message={'Hello!  \n\nWhat can we do for you?'}
                             textReplyTime={'Reply within 12 hours.'} />
                         </div>   
-                        <div className="child_phone">
+                        <div className="child_phone" onClick={() => alert.show("you can call on 6565656565")}>
                             <a href="tel:+919366309563"><img src={Phone} width={30} height={30} style={{ display: 'flex' }} /></a>
                         </div>
                     </> : null
@@ -61,4 +63,4 @@ class Chat extends Component {
     }
 }
 
-export default Chat;
+export default withAlert()(Chat);

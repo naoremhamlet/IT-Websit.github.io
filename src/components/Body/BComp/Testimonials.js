@@ -5,30 +5,30 @@ function Testimonials() {
     return (
         <div className="testimonial">
             <h1>Testimonials</h1>
-            <div className="wrappert">
+            <div className="testimonial_wrappert">
 
-                <div className="testimonial-container">
-                    <h2 className="quote">All I can say is thank you! This has completely changed my business.
+                <div className="testimonial_container">
+                    <h2 className="testimonial_quote">All I can say is thank you! This has completely changed my business.
                     </h2>
-                    <div className="signature">
-                        <p className="name">Name</p>
-                        <p className="company">Designation</p>
+                    <div className="testimonial_signature">
+                        <p className="testimonial_name">Name</p>
+                        <p className="testimonial_company">Designation</p>
                     </div>
                 </div>
-                <div className="testimonial-container">
-                    <h2 className="quote">All I can say is thank you! This has completely changed my business.
+                <div className="testimonial_container">
+                    <h2 className="testimonial_quote">All I can say is thank you! This has completely changed my business.
                     </h2>
-                    <div className="signature">
-                        <p className="name">Name</p>
-                        <p className="company">Designation</p>
+                    <div className="testimonial_signature">
+                        <p className="testimonial_name">Name</p>
+                        <p className="testimonial_company">Designation</p>
                     </div>
                 </div>
-                <div className="testimonial-container">
-                    <h2 className="quote">All I can say is thank you! This has completely changed my business.
+                <div className="testimonial_container">
+                    <h2 className="testimonial_quote">All I can say is thank you! This has completely changed my business.
                     </h2>
-                    <div className="signature">
-                        <p className="name">Name</p>
-                        <p className="company">Designation</p>
+                    <div className="testimonial_signature">
+                        <p className="testimonial_name">Name</p>
+                        <p className="testimonial_company">Designation</p>
                     </div>
                 </div>
 
