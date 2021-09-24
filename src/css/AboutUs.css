@@ -9,12 +9,12 @@ gray light = #b0bec5 */
     padding: 0;
 }
 .about {
-    /* margin: 2rem; */
+    margin-top: 70px;
     background-color: #e5e9ec;
 }
 .about h1 {
     color: #52ab98;
-    padding: 2rem;
+    padding: 1rem;
 }
 .container h1 {
     padding: 1rem;

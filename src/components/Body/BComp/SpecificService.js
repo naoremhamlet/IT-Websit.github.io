@@ -20,7 +20,7 @@ class SpecificService extends Component {
                     <div>
                         <div class="shadow">
                             <div class="about-img">
-                                <img src={image} alt="about image" style={{ height: 300, width: 300 }} />
+                                <img src={image} alt="about image" />
                             </div>
                         </div>
                     </div>

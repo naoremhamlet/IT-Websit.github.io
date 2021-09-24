@@ -15,6 +15,7 @@
 .about-img img{
   display: block;
     width: 300px;
+    height: 300px;
 }
 .about-img{
     width: 300px;
@@ -95,3 +96,33 @@
         /* right: 100px; */
     }
 }
+
+@media screen and (max-width: 900px){
+    .about-left-content{
+        margin-left: -50px;
+    }
+    .about-left-content>div{
+        width: 250px;
+        height: 250px;
+        padding: 2.5rem 2.5rem 1.5rem 2.5rem;
+    }
+    .about-img img{
+        width: 250px;
+        height: 250px;
+    }
+  }
+  
+  @media screen and (max-width: 400px){
+    .about-left-content{
+        margin-left: -50px;
+    }
+    .about-left-content>div{
+        width: 230px;
+        height: 230px;
+        padding: 2.5rem 2.5rem 1.5rem 2.5rem;
+    }
+    .about-img img{
+        width: 230px;
+        height: 230px;
+    }
+  }

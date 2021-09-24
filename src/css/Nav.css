@@ -121,7 +121,10 @@ nav .content .links{
 }
 
 /* Responsive code start */
-@media screen and (max-width: 1250px){
+@media screen and (max-width: 2000px){
+  .wrapper .menu-icon img{
+    display: none;
+  }
   .logo img {
     height: 50px;
     margin-left: auto;
@@ -145,7 +148,7 @@ nav .content .links{
 }
 
 @media screen and (max-width: 900px){
-  .wrapper .menu-icon{
+  .wrapper .menu-icon img{
     display: block;
   }
   .wrapper #show-menu:checked ~ .menu-icon i::before{
@@ -210,6 +213,9 @@ nav .content .links{
 }
 
 @media screen and (max-width: 400px){
+  /* .wrapper .menu-icon img{
+    display: block;
+  } */
   .wrapper nav{
     padding: 0 10px;
   }

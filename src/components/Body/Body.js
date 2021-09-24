@@ -45,9 +45,7 @@ class Body extends Component {
                 {active==='home'? <Banner changeActive={this.changeActive} />: null}
 
                 {active!=='home'&&active!=='contact us'&&active!=='it services'&&active!=='web services'&&active!=='crypto services'&&active!=='about us'?
-                
-                    <SpecificService active={active} changeActive={this.changeActive} /> : null
-                }
+                    <SpecificService active={active} changeActive={this.changeActive} /> : null }
 
                 {(active==='it services' || active==='web services' || active==='crypto services')?
                         <Services active={active} changeActive={this.changeActive} /> : null }
@@ -55,13 +53,12 @@ class Body extends Component {
                 {active==='contact us'? <ContactUs />: null}
 
                 
-
+                {active==='about us'? <AboutUs />: null}
                 
                 {active==='home' || active==='about us'? <Features/>: null}
 
                 {active==='home'? <Testimonials/>: null}
                 {active!=='contact us'&&active!=='it services'&&active!=='web services'&&active!=='crypto services'&&active!=='about us'? <Timeline />: null}
-                {active==='about us'? <AboutUs />: null}
 
                 <Chat />
                 <Footer />
